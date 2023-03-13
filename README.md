@@ -17,6 +17,9 @@ While I developed my orion library, I've used several scripts not from me, but o
 # Executor Requirements
 You can use any executor to use this Orion Library! If you want to use an Executor. See wearedevs.net
 
+***
 
 # Loadstrings
-CC00.00.40: loadstring(game:HttpGet"https://raw.githubusercontent.com/ItsAllMild/Character-Hub-Orion-Library-/main/CC00.00.40")()
+CC00.00.40: 
+`loadstring(game:HttpGet"https://raw.githubusercontent.com/ItsAllMild/Character-Hub-Orion-Library-/main/CC00.00.40")()`
+***
