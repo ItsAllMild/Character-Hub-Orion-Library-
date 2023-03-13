@@ -23,4 +23,8 @@ You can use any executor to use this Orion Library! If you want to use an Execut
 CC00.00.40: 
 
 `loadstring(game:HttpGet"https://raw.githubusercontent.com/ItsAllMild/Character-Hub-Orion-Library-/main/CC00.00.40")()`
+
+CC00.00.41:
+
+`We are working on this version! Please wait until this comes out. The release may take longer due to testing`
 ***
