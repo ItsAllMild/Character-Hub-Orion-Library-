@@ -125,7 +125,7 @@ tool.Parent = game.Players.LocalPlayer.Backpack
  end
  })
   EX:AddButton({
-	Name = "Noclip and Fly FE",
+	Name = "|FE| : Noclip and Fly",
 	Callback = function()
       			local ScreenGui = Instance.new("ScreenGui")
 local mainframe = Instance.new("Frame")
@@ -334,7 +334,12 @@ SAJP:AddSlider({
 		game.Workspace.Gravity = (Value)
 	end   
 })
-
+SAJP:AddButton({
+	Name = "|FE| : Walk on Walls",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+  	end    
+})
 
 SAJP:AddDropdown({
 	Name = "BreakJointsOnDeath",
