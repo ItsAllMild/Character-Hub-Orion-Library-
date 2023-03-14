@@ -322,7 +322,7 @@ SAJP:AddSlider({
 })
 SAJP:AddSlider({
 	Name = "Gravity",
-	Min = 0,
+	Min = (-1000),
 	Max = 1000,
 	Default = 196.2,
 	Color = Color3.fromRGB(255,255,255),
