@@ -626,7 +626,7 @@ local TP = Window:MakeTab({
 	PremiumOnly = false
 })
 TP:AddTextbox({
-	Name = "Target [plr]",
+	Name = "New CFrame [CFrame]",
 	Default = "default box input",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -634,11 +634,11 @@ TP:AddTextbox({
 	end	  
 })
 TP:AddButton({
-	Name = "Teleport to player",
+	Name = "Teleport to CFrame",
 	Callback = function()
-      		for _, v in pairs(game.Players:GetPlayers(target)) do
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-		end
+      		
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target
+		
   	end    
 })
 
