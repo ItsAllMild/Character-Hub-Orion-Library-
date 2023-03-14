@@ -1,5 +1,6 @@
+local StartupText = "Character hub <Version: 00.00.41>"
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Character Control Hub ",IntroText = "Character Hub", HidePremium = false, IntroText = "Character Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Character Control Hub ",IntroText = "Character Hub", HidePremium = false, IntroText = (StartupText), SaveConfig = true, ConfigFolder = "OrionTest"})
 --Functions
 function Loadcharacter()
 	game.Players.LocalPlayer:LoadCharacter()
