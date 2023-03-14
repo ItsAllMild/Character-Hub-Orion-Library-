@@ -336,7 +336,7 @@ SAJP:AddSlider({
 SAJP:AddButton({
 	Name = "Set gravity really low",
 	Callback = function()
-      		fnm:Set(1)
+      		Gravity:Set(1)
   	end    
 })
 
