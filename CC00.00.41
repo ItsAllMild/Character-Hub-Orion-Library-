@@ -4,6 +4,14 @@ local Window = OrionLib:MakeWindow({Name = "Character Control Hub ",IntroText = 
 function Loadcharacter()
 	game.Players.LocalPlayer:LoadCharacter()
 end
+function OnLoad()
+	OrionLib:MakeNotification({
+	Name = "Character hub <Loaded>",
+	Content = "Character Hub is now loaded. Enjoy!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+	})
+end
 
 function GMTrue()
 local Cv = Instance.new("RemoteEvent")
@@ -22,7 +30,7 @@ CVR.OnServerEvent:Connect(function(plr)
 	game.Players.LocalPlayer.Character.Humanoid.Health = 100
 end)
 end
-
+OnLoad()
 local CB = Window:MakeTab({
 	Name = "Character Basics",
 	Icon = "rbxassetid://4483345998",
