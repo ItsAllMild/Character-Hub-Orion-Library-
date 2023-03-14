@@ -597,6 +597,3 @@ local Settings = CB:AddSection({
 
 OrionLib:Init()
 
---[[
-  --Hello, please do not modify the scripts, It WILL not work unless if you know what you're doing. Yes you can modify the scripts :)
---[[
