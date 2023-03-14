@@ -620,7 +620,27 @@ INN:AddButton({
 local Settings = CB:AddSection({
 	Name = "Settings"
 })
-
+local TP = Window:MakeTab({
+	Name = "TP to",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+TP:AddTextbox({
+	Name = "Target [plr]",
+	Default = "default box input",
+	TextDisappear = true,
+	Callback = function(Value)
+		target = (Value)
+	end	  
+})
+TP:AddButton({
+	Name = "Teleport to player",
+	Callback = function()
+      		for _, v in pairs(game.Players:GetPlayers(target)) do
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+		end
+  	end    
+})
 
 OrionLib:Init()
 
