@@ -9,7 +9,7 @@ function OnLoad()
 	OrionLib:MakeNotification({
 	Name = "Character hub <Loaded>",
 	Content = "Character Hub is now loaded. Enjoy!",
-	Image = "rbxassetid://12003452779",
+	Image = "rbxassetid://11612640945",
 	Time = 5
 	})
 end
