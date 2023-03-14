@@ -320,6 +320,18 @@ SAJP:AddSlider({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 	end   
 })
+SAJP:AddSlider({
+	Name = "Gravity",
+	Min = 0,
+	Max = 1000,
+	Default = 196.2,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Gravity",
+	Callback = function(Value)
+		game.Workspace.Gravity = (Value)
+	end   
+})
 
 
 SAJP:AddDropdown({
