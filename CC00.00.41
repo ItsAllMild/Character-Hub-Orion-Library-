@@ -333,12 +333,6 @@ SAJP:AddSlider({
 		game.Workspace.Gravity = (Value)
 	end   
 })
-SAJP:AddButton({
-	Name = "Set gravity really low",
-	Callback = function()
-      		Gravity:Set(1)
-  	end    
-})
 
 
 SAJP:AddDropdown({
