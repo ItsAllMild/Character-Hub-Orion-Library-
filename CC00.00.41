@@ -329,8 +329,15 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Gravity",
 	Callback = function(Value)
+		fnm = (Value)
 		game.Workspace.Gravity = (Value)
 	end   
+})
+SAJP:AddButton({
+	Name = "Set gravity really low",
+	Callback = function()
+      		fnm:Set(1)
+  	end    
 })
 
 
