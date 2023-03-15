@@ -17,16 +17,9 @@ end
 function PrintMessage(message)
 	print(message)
 end
-function PrintWarning(message)
-	warn(message)
-end
-function PrintError(message)
-	error(message)
-end
 function OnLoad()
 	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 8)
 	PrintMessage("Character hub is now loaded")
-	error("Character hub is having [1] error")
 end
 
 
