@@ -18,7 +18,7 @@ function PrintMessage(message)
 	print(message)
 end
 function OnLoad()
-	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 8)
+	NewSystemNotification("Character hub loaded", "Character hub was now loaded! Also, this Orion library cannot access the backend server, please do not let this confuse you!", 12)
 	PrintMessage("Character hub is now loaded")
 end
 
