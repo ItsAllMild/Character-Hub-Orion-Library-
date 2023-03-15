@@ -346,7 +346,73 @@ SAJP:AddButton({
       		loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
   	end    
 })
-
+SAJP:AddButton({
+	Name = "|FE / R6 Only!| :  Turn Body into Parts",
+	Callback = function()
+      		local NewLeftArm = Instance.new("Part")
+		NewLeftArm.Parent = game.Players.LocalPlayer.Character["Left Arm"]
+		NewLeftArm.Name = "NewLeftArm"
+		NewLeftArm.Size.X = 1
+		NewLeftArm.Size.Y = 2
+		NewLeftArm.Size.Z = 1
+		NewLeftArm.Visible = true
+		NewLeftArm.Position = game.Players.LocalPlayer.Character["Left Arm"].CFrame.Position
+		
+		local NewRightArm = Instance.new("Part")
+		NewRightArm.Parent = game.Players.LocalPlayer.Character["Right Arm"]
+		NewRightArm.Name = "NewRightArm"
+		NewRightArm.Size.X = 1
+		NewRightArm.Size.Y = 2
+		NewRightArm.Size.Z = 1
+		NewRightArm.Visible = true
+		NewRightArm.Position = game.Players.LocalPlayer.Character["Right Arm"].CFrame.Position
+		
+		local NewLeftLeg = Instance.new("Part")
+		NewLeftLeg.Parent = game.Players.LocalPlayer.Character["Left Leg"]
+		NewLeftLeg.Name = "NewLeftLeg"
+		NewLeftLeg.Size.X = 1
+		NewLeftLeg.Size.Y = 2
+		NewLeftLeg.Size.Z = 1
+		NewLeftLeg.Visible = true
+		NewLeftLeg.Position = game.Players.LocalPlayer.Character["Left Leg"].CFrame.Position
+		
+		local NewRightLeg = Instance.new("Part")
+		NewRightLeg.Parent = game.Players.LocalPlayer.Character["Right Leg"]
+		NewRightLeg.Name = "NewRightLeg"
+		NewRightLeg.Size.X = 1
+		NewRightLeg.Size.Y = 2
+		NewRightLeg.Size.Z = 1
+		NewRightLeg.Visible = true
+		NewRightLeg.Position = game.Players.LocalPlayer.Character["Right Leg"].CFrame.Position
+		
+		local NewTorso = Instance.new("Part")
+		NewTorso.Parent = game.Players.LocalPlayer.Character.Torso
+		NewTorso.Name = "NewTroso"
+		NewTorso.Size.X = 2
+		NewTorso.Size.Y = 2
+		NewTorso.Size.Z = 1
+		NewTorso.Visible = true
+		NewTorso.Position = game.Players.LocalPlayer.Character.Torso.CFrame.Position
+		
+		game.Players.LocalPlayer.Character["Left Arm"]
+		game.Players.LocalPlayer.Character["Right Arm"]
+		game.Players.LocalPlayer.Character["Left Leg"]
+		game.Players.LocalPlayer.Character["Right Leg"]
+		game.Players.LocalPlayer.Character["Torso"]
+		
+		local Acitvate = true
+		
+		repeat
+		if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude ~= 0 then
+			NewLeftArm.Position = game.Players.LocalPlayer.Character["Left Arm"].CFrame.Position
+			NewRightArm.Position = game.Players.LocalPlayer.Character["Right Arm"].CFrame.Position
+			NewLeftLeg.Position = game.Players.LocalPlayer.Character["Left Leg"].CFrame.Position
+			NewRightLeg.Position = game.Players.LocalPlayer.Character["Right Leg"].CFrame.Position
+			NewTorso.Position = game.Players.LocalPlayer.Character.Torso.CFrame.Position
+		end
+		until nil
+  	end    
+})
 SAJP:AddDropdown({
 	Name = "BreakJointsOnDeath",
 	Default = "True",
