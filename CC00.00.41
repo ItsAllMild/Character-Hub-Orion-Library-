@@ -14,9 +14,19 @@ end
 function Loadcharacter()
 	game.Players.LocalPlayer:LoadCharacter()
 end
+function PrintMessage(message)
+	print(message)
+end
+function PrintWarning(message)
+	warn(message)
+end
+function PrintError(message)
+	error(message)
+end
 function OnLoad()
 	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 8)
-	
+	PrintMessage("Character hub is now loaded")
+	error("Character hub is having [1] error")
 end
 
 
@@ -437,6 +447,21 @@ SAJP:AddDropdown({
 	Value:Set("Allow")
 	end
 	end
+})
+SAJP:AddDropdown({
+	Name = "PlatformStand",
+	Default = "False",
+	Options = {"True", "False"},
+	Callback = function(Value)
+		if (Value) == "False" then
+			game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+			
+		end
+		
+		if (Value) == "True" then
+			game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true
+		end
+	end    
 })
 NPOC:AddButton({
 	Name = "No Limbs",
