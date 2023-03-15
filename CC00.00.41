@@ -12,7 +12,9 @@ function NewSystemNotification(Title, Text, Time)
 	})
 end
 function Loadcharacter()
-	game.Players.LocalPlayer:LoadCharacter()
+	for _, plr in pairs(game.Players:GetPlayers(game.Players.LocalPlayer)) do
+			game.Players[plr]:LoadCharacter()
+		end
 end
 function PrintMessage(message)
 	print(message)
