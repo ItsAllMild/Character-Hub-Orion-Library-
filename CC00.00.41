@@ -3,21 +3,22 @@ local SystemText = ""
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Character Control Hub ",IntroText = "Character Hub", HidePremium = false, IntroText = (StartupText), SaveConfig = true, ConfigFolder = "OrionTest"})
 --Functions
-function Loadcharacter()
-	game.Players.LocalPlayer:LoadCharacter()
-end
-function OnLoad()
-	NewSystemNotification()
-	SystemText = "Character hub is now loaded!"
-end
-function NewSystemNotification()
+function NewSystemNotification(Title, Text)
 	OrionLib:MakeNotification({
-	Name = "Character hub <System>",
-	Content = "Character hub system: "..SystemText,
+	Name = (Title),
+	Content = (Text),
 	Image = "rbxassetid://11612640945",
 	Time = 5
 	})
 end
+function Loadcharacter()
+	game.Players.LocalPlayer:LoadCharacter()
+end
+function OnLoad()
+	NewSystemNotification("Character hub loaded", "Character hub was now loaded!")
+	
+end
+
 
 function GMTrue()
 local Cv = Instance.new("RemoteEvent")
