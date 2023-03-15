@@ -8,14 +8,14 @@ function NewSystemNotification(Title, Text, Time)
 	Name = (Title),
 	Content = (Text),
 	Image = "rbxassetid://11612640945",
-	Time = 5
+	Time = (Time)
 	})
 end
 function Loadcharacter()
 	game.Players.LocalPlayer:LoadCharacter()
 end
 function OnLoad()
-	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 5)
+	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 8)
 	
 end
 
