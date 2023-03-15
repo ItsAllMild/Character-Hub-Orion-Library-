@@ -3,7 +3,7 @@ local SystemText = ""
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Character Control Hub ",IntroText = "Character Hub", HidePremium = false, IntroText = (StartupText), SaveConfig = true, ConfigFolder = "OrionTest"})
 --Functions
-function NewSystemNotification(Title, Text)
+function NewSystemNotification(Title, Text, Time)
 	OrionLib:MakeNotification({
 	Name = (Title),
 	Content = (Text),
@@ -15,7 +15,7 @@ function Loadcharacter()
 	game.Players.LocalPlayer:LoadCharacter()
 end
 function OnLoad()
-	NewSystemNotification("Character hub loaded", "Character hub was now loaded!")
+	NewSystemNotification("Character hub loaded", "Character hub was now loaded!", 5)
 	
 end
 
