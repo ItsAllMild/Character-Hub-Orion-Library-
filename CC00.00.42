@@ -354,7 +354,7 @@ SAJP:AddButton({
 SAJP:AddButton({
 	Name = "|FE| : Spin 50 degrees",
 	Callback = function()
-      		game.Players.LocalPlayer.Character.Origin.Orientation.Y += 50  
+      		game.Players.LocalPlayer.Character.Orientation.Y += 50  
 	end
 })
 SAJP:AddButton({
