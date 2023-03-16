@@ -11,11 +11,18 @@ function NewSystemNotification(Title, Text, Time)
 	Time = (Time)
 	})
 end
-function Loadcharacter()
-	for _, plr in pairs(game.Players.LocalPlayer.Name) do
-			game.Players[plr]:LoadCharacter()
-		end
-end
+--G's
+_G.speed = 16
+game.Players.LocalPlayer.Character.Humanoid.MaxSpeed = _G.speed
+
+_G.jumppower = 50
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
+
+_G.Gravity = 196.2
+game.Workspace.Gravity = _G.Gravity
+
+--Blank
+
 function PrintMessage(message)
 	print(message)
 end
@@ -516,12 +523,6 @@ NPOC:AddButton({
 	Name = "No Head",
 	Callback = function()
       		game.Players.LocalPlayer.Character["Head"].Transparency = (1)
-  	end    
-})
-CH:AddButton({
-	Name = "Refresh Character",
-	Callback = function()
-      		Loadcharacter()
   	end    
 })
 CH:AddButton({
