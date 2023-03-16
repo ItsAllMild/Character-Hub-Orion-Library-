@@ -12,20 +12,20 @@ function NewSystemNotification(Title, Text, Time)
 	})
 end
 --G's
-_G.walkspeed = 16
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.walkspeed
+walkspeed = 16
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = walkspeed
 
-_G.jumppower = 50
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
+jumppower = 50
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = jumppower
 
-_G.Gravity = 196.2
+Gravity = 196.2
 game.Workspace.Gravity = _G.Gravity
 
-_G.Health = 100
-game.Players.LocalPlayer.Character.Humanoid.Health = _G.Health
+Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = Health
 
-_G.MaxHealth = 100
-game.Players.LocalPlayer.Character.Humanoid.MaxHealth = _G.MaxHealth
+MaxHealth = 100
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = MaxHealth
 
 --Blank
 
@@ -330,8 +330,8 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Speed",
 	Callback = function(Value)
-		_G.speed = (Value)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.speed
+		speed = (Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
 	end   
 })
 SAJP:AddSlider({
@@ -343,8 +343,8 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Jump Power",
 	Callback = function(Value)
-		_G.jumppower = (Value)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
+		jumppower = (Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = jumppower
 	end   
 })
 SAJP:AddSlider({
@@ -356,7 +356,7 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Gravity",
 	Callback = function(Value)
-		_G.Gravity = (Value)
+		Gravity = (Value)
 game.Workspace.Gravity = _G.Gravity
 	end   
 })
@@ -367,9 +367,12 @@ SAJP:AddButton({
   	end    
 })
 SAJP:AddButton({
-	Name = "|FE| : Spin 50 degrees",
+	Name = "|FE| : Spin",
 	Callback = function()
-      		game.Players.LocalPlayer.Character.Orientation.Y += 50  
+	while wait(0.05) do
+      		game.Players.LocalPlayer.HumanoidRootPart.Character.CFrame.Orientation.Y += 50  
+		
+	end
 	end
 })
 SAJP:AddButton({
