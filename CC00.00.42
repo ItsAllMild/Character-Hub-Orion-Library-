@@ -330,7 +330,7 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Speed",
 	Callback = function(Value)
-		_G.speed = 16
+		_G.speed = (Value)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.speed
 	end   
 })
@@ -343,7 +343,7 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Jump Power",
 	Callback = function(Value)
-		_G.jumppower = 50
+		_G.jumppower = (Value)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
 	end   
 })
@@ -356,7 +356,7 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Gravity",
 	Callback = function(Value)
-		_G.Gravity = 196.2
+		_G.Gravity = (Value)
 game.Workspace.Gravity = _G.Gravity
 	end   
 })
