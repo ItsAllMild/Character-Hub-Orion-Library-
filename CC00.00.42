@@ -399,11 +399,11 @@ SAJP:AddButton({
 		NewTorso.Visible = true
 		NewTorso.Position = game.Players.LocalPlayer.Character.Torso.CFrame.Position
 		
-		game.Players.LocalPlayer.Character["Left Arm"]
-		game.Players.LocalPlayer.Character["Right Arm"]
-		game.Players.LocalPlayer.Character["Left Leg"]
-		game.Players.LocalPlayer.Character["Right Leg"]
-		game.Players.LocalPlayer.Character["Torso"]
+		game.Players.LocalPlayer.Character["Left Arm"].Transparency = 1
+		game.Players.LocalPlayer.Character["Right Arm"].Transparency = 1
+		game.Players.LocalPlayer.Character["Left Leg"].Transparency = 1
+		game.Players.LocalPlayer.Character["Right Leg"].Transparency = 1
+		game.Players.LocalPlayer.Character["Torso"].Transparency = 1
 		
 		local Acitvate = true
 		
