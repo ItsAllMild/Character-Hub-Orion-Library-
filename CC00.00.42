@@ -352,6 +352,12 @@ SAJP:AddButton({
   	end    
 })
 SAJP:AddButton({
+	Name = "|FE| : Spin crazy",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Origin.Orientation.Y =+ 50
+  	end    
+})
+SAJP:AddButton({
 	Name = "|FE / R6 Only!| :  Turn Body into Parts",
 	Callback = function()
       		local NewLeftArm = Instance.new("Part")
