@@ -357,7 +357,7 @@ SAJP:AddSlider({
 	ValueName = "Gravity",
 	Callback = function(Value)
 		Gravity = (Value)
-game.Workspace.Gravity = _G.Gravity
+game.Workspace.Gravity = Gravity
 	end   
 })
 SAJP:AddButton({
