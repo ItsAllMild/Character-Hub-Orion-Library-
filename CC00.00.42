@@ -21,6 +21,12 @@ game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
 _G.Gravity = 196.2
 game.Workspace.Gravity = _G.Gravity
 
+_G.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = _G.Health
+
+_G.MaxHealth = 100
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = _G.MaxHealth
+
 --Blank
 
 function PrintMessage(message)
@@ -324,7 +330,8 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Speed",
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+		_G.speed = 16
+		game.Players.LocalPlayer.Character.Humanoid.MaxSpeed = _G.speed
 	end   
 })
 SAJP:AddSlider({
@@ -336,7 +343,8 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Jump Power",
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+		_G.jumppower = 50
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
 	end   
 })
 SAJP:AddSlider({
@@ -348,8 +356,8 @@ SAJP:AddSlider({
 	Increment = 1,
 	ValueName = "Gravity",
 	Callback = function(Value)
-		fnm = (Value)
-		game.Workspace.Gravity = (Value)
+		_G.Gravity = 196.2
+game.Workspace.Gravity = _G.Gravity
 	end   
 })
 SAJP:AddButton({
