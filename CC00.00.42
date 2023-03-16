@@ -12,8 +12,8 @@ function NewSystemNotification(Title, Text, Time)
 	})
 end
 --G's
-_G.speed = 16
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.speed
+_G.walkspeed = 16
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.walkspeed
 
 _G.jumppower = 50
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.jumppower
