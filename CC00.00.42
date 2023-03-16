@@ -355,8 +355,7 @@ SAJP:AddButton({
 	Name = "|FE| : Spin crazy",
 	Callback = function()
 	repeat
-      		game.Players.LocalPlayer.Character.Origin.Orientation.Y += 50
-  	end    
+      		game.Players.LocalPlayer.Character.Origin.Orientation.Y += 50  
 	until nil
 	end
 })
