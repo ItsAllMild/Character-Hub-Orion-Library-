@@ -27,9 +27,9 @@ CC00.00.40:
 --Whats new to CC00.00.40?
 --More commands.
 
-CC00.00.41:
+Latest Version
 
-`loadstring(game:HttpGet"https://raw.githubusercontent.com/ItsAllMild/Character-Hub-Orion-Library-/main/CC00.00.41")()`
+`loadstring(game:HttpGet"https://raw.githubusercontent.com/ItsAllMild/Character-Hub-Orion-Library-/main/CC00.00.42")()`
 
 --Whats new to CC00.00.41?
 --Orginized Commands to various sections
